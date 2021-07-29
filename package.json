@@ -1,0 +1,14 @@
+{
+  "name": "hhp-tools",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "prettier": "@hhp-tools/prettier-config",
+  "devDependencies": {
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.5"
+  }
+}

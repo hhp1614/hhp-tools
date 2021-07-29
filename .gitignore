@@ -1,0 +1,15 @@
+# Mac
+.DS_Store
+
+# Editor files
+.idea/
+.vscode/
+
+# floder
+node_modules/
+dist/
+.temp/
+.cache/
+
+# file
+*.log
