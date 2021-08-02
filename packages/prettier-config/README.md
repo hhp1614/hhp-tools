@@ -1,6 +1,6 @@
 ## 简介
 
-统一 prettier 配置
+统一 `prettier` 配置
 
 ## 使用
 
@@ -8,6 +8,8 @@
 
 ```shell
 yarn add -D @hhp-tools/prettier-config
+# or
+npm i -D @hhp-tools/prettier-config
 ```
 
 在 `package.json` 中配置

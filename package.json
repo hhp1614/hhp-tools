@@ -1,6 +1,9 @@
 {
   "name": "hhp-tools",
   "private": true,
+  "scripts": {
+    "setup": "lerna bootstrap"
+  },
   "workspaces": {
     "packages": [
       "packages/*"
