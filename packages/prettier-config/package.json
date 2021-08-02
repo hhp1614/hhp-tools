@@ -1,6 +1,6 @@
 {
   "name": "@hhp-tools/prettier-config",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": ".prettierrc.json",
   "license": "MIT",
   "publishConfig": {
