@@ -1,6 +1,6 @@
 {
   "name": "@hhp-tools/cli",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "build": "ts-node ./src/scripts/buildCli.ts",
     "watch": "ts-node ./src/scripts/buildCli.ts -w"
