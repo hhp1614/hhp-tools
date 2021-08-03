@@ -5,6 +5,7 @@ import externals from 'rollup-plugin-node-externals'
 import json from '@rollup/plugin-json'
 import { terser } from 'rollup-plugin-terser'
 import chalk from 'chalk'
+import * as fs from 'fs-extra'
 
 /**
  * 使用 rollup 进行打包
@@ -13,7 +14,11 @@ import chalk from 'chalk'
  */
 export async function bundle(rollupOptions: RollupOptions, isWatch: boolean) {
   /** 默认插件 */
-  const defaultPlugins = [typescript(), autoExternal(), externals(), json(), terser()]
+  const defaultPlugins = [typescript(), externals(), json(), terser()]
+  // 解决运行命令时当前目录没有 package.json 文件的报错
+  if (fs.pathExistsSync('./package.json')) {
+    defaultPlugins.push(autoExternal())
+  }
 
   rollupOptions.plugins = [...defaultPlugins, ...(rollupOptions.plugins ?? [])]
   // 如果 output 选项不是数组，将其转化为数组
