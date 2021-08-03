@@ -1,6 +1,9 @@
 {
   "name": "@hhp-tools/cli",
   "version": "0.1.0",
+  "description": "一个用于打包的 CLI",
+  "main": "dist/bin.js",
+  "license": "MIT",
   "scripts": {
     "build": "ts-node ./src/scripts/buildCli.ts",
     "watch": "ts-node ./src/scripts/buildCli.ts -w"
@@ -31,5 +34,9 @@
     "@types/rollup-plugin-auto-external": "^2.0.2",
     "ts-node": "^10.1.0",
     "typescript": "^4.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hhp1614/hhp-tools/tree/master/packages/cli"
   }
 }

@@ -6,4 +6,6 @@ const main = new Command('hhp-cli')
 
 main.addCommand(build)
 
-main.version(pkg.version).parse()
+main.version(pkg.version, '-v, --version', '查看版本')
+
+main.parse()
