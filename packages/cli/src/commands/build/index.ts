@@ -18,16 +18,16 @@ export const build = new Command('build')
     }
     await fs.ensureDir(option.output)
     const rollupOption: RollupOptions = {
-      input: inputFilePath,
+      input: file,
       output: [
         {
-          file: path.resolve(option.output, 'index.js'),
+          file: path.join(option.output, 'index.js'),
           format: 'cjs',
           sourcemap: true,
           exports: 'auto',
         },
         {
-          file: path.resolve(option.output, 'index.esm.js'),
+          file: path.join(option.output, 'index.esm.js'),
           format: 'esm',
           sourcemap: true,
           exports: 'auto',
