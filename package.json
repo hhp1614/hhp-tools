@@ -2,16 +2,40 @@
   "name": "hhp-tools",
   "private": true,
   "scripts": {
-    "setup": "lerna bootstrap"
-  },
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
+    "watch:cli": "pnpm run watch --filter @hhp-tools/cli",
+    "build:cli": "pnpm run build --filter @hhp-tools/cli",
+    "preinstall": "npx simple-git-hooks"
   },
   "prettier": "@hhp-tools/prettier-config",
+  "eslintConfig": {
+    "extends": [
+      "@hhp-tools/eslint-config-ts"
+    ]
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged",
+    "commit-msg": "npx commitlint --edit $1"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,css,md,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@hhp-tools/eslint-config-ts": "workspace:*",
+    "@hhp-tools/prettier-config": "workspace:*",
+    "eslint": "^7.32.0",
+    "lint-staged": "^11.1.2",
     "prettier": "^2.3.2",
+    "simple-git-hooks": "^2.5.1",
     "typescript": "^4.3.5"
   }
 }
