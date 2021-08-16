@@ -10,7 +10,8 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "declaration": false,
-    "declarationMap": false
+    "declarationMap": false,
+    "resolveJsonModule": true
   },
   "include": ["src"],
   "typedocOptions": {
