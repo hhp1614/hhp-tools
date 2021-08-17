@@ -2,12 +2,20 @@ sudo: false
 language: node_js
 node_js:
   - lts/* # use nodejs LTS
-cache: npm
+cache:
+  npm: false
+  directories:
+    - "~/.pnpm-store"
+before_install:
+  - curl -f https://get.pnpm.io/v6.7.js | node - add --global pnpm@6
+  - pnpm config set store-dir ~/.pnpm-store
+install:
+  - pnpm install
 branches:
   only:
     - master # build master branch only
 script:
-  - npm run docs:build # generate static files
+  - pnpm docs:build # generate static files
 deploy:
   provider: pages
   skip-cleanup: true
