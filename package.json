@@ -6,7 +6,7 @@
     "build:cli": "pnpm run build --filter @hhp-tools/cli",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "preinstall": "npx simple-git-hooks"
+    "postinstall": "npx simple-git-hooks"
   },
   "prettier": "@hhp-tools/prettier-config",
   "eslintConfig": {
