@@ -4,6 +4,8 @@
   "scripts": {
     "watch:cli": "pnpm run watch --filter @hhp-tools/cli",
     "build:cli": "pnpm run build --filter @hhp-tools/cli",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
     "preinstall": "npx simple-git-hooks"
   },
   "prettier": "@hhp-tools/prettier-config",
@@ -37,6 +39,7 @@
     "lint-staged": "^11.1.2",
     "prettier": "^2.3.2",
     "simple-git-hooks": "^2.5.1",
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.5",
+    "vuepress": "^2.0.0-beta.24"
   }
 }
