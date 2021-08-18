@@ -1,0 +1,20 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parser": "vue-eslint-parser", // 解析 vue
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser", // 解析 ts
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended", // eslint 默认
+    "plugin:vue/recommended", // vue
+    "plugin:prettier/recommended", // prettier
+    "prettier",
+    "plugin:@typescript-eslint/recommended" // ts
+  ]
+}
