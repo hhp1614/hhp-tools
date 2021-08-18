@@ -15,7 +15,7 @@ module.exports = {
         text: '配置',
         children: [
           { text: '@hhp-tools/prettier-config', link: '/tools/libs/prettier-config.md' },
-          { text: '@hhp-tools/eslint-config-ts', link: '/tools/libs/eslint-config-ts.md' },
+          { text: '@hhp-tools/eslint-config', link: '/tools/libs/eslint-config.md' },
         ],
       },
       { text: 'GitHub', link: 'https://github.com/hhp1614/hhp-tools' },
