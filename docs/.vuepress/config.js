@@ -21,4 +21,4 @@ module.exports = {
       { text: 'GitHub', link: 'https://github.com/hhp1614/hhp-tools' },
     ],
   },
-}
+};
