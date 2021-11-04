@@ -18,9 +18,9 @@ npm i -D @hhp-tools/eslint-config
 
 ```json
 {
-  "eslintConfig": {
-    "extends": ["@hhp-tools/eslint-config"]
-  }
+    "eslintConfig": {
+        "extends": ["@hhp-tools/eslint-config"]
+    }
 }
 ```
 
@@ -28,6 +28,6 @@ npm i -D @hhp-tools/eslint-config
 
 ```json
 {
-  "extends": "@hhp-tools/eslint-config"
+    "extends": "@hhp-tools/eslint-config"
 }
 ```

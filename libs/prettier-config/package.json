@@ -1,10 +1,10 @@
 {
-  "name": "@hhp-tools/prettier-config",
-  "version": "1.0.2",
-  "main": ".prettierrc.json",
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  }
+    "name": "@hhp-tools/prettier-config",
+    "version": "1.0.3",
+    "main": ".prettierrc.json",
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    }
 }

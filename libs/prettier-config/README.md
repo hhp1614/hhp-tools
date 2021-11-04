@@ -16,6 +16,6 @@ npm i -D @hhp-tools/prettier-config
 
 ```json
 {
-  "prettier": "@hhp-tools/prettier-config"
+    "prettier": "@hhp-tools/prettier-config"
 }
 ```
