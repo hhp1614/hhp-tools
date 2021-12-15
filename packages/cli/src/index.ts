@@ -1,11 +1,11 @@
-import { Command } from 'commander';
-import { build } from './commands/build';
-import pkg from '../package.json';
+import { Command } from 'commander'
+import { build } from './commands/build'
+import pkg from '../package.json'
 
-const main = new Command('hhp-cli');
+const main = new Command('hhp-cli')
 
-main.addCommand(build);
+main.addCommand(build)
 
-main.version(pkg.version, '-v, --version', '查看版本');
+main.version(pkg.version, '-v, --version', '查看版本')
 
-main.parse();
+main.parse()

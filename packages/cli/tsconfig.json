@@ -1,22 +1,22 @@
 {
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": ["ESNext"],
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "declaration": false,
+    "declarationMap": false,
+    "resolveJsonModule": true
+  },
+  "include": ["src"],
+  "ts-node": {
     "compilerOptions": {
-        "target": "ES6",
-        "lib": ["ESNext"],
-        "outDir": "./dist",
-        "skipLibCheck": true,
-        "esModuleInterop": true,
-        "strict": true,
-        "module": "ESNext",
-        "moduleResolution": "node",
-        "sourceMap": true,
-        "declaration": false,
-        "declarationMap": false,
-        "resolveJsonModule": true
-    },
-    "include": ["src"],
-    "ts-node": {
-        "compilerOptions": {
-            "module": "CommonJS"
-        }
+      "module": "CommonJS"
     }
+  }
 }
