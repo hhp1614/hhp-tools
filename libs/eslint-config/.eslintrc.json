@@ -18,6 +18,7 @@
     "plugin:@typescript-eslint/recommended" // ts
   ],
   "rules": {
-    "@typescript-eslint/explicit-module-boundary-types": "off" // 每一个函数都要显式的表明函数返回值
+    "@typescript-eslint/explicit-module-boundary-types": "off", // 每一个函数都要显式的表明函数返回值
+    "@typescript-eslint/no-non-null-assertion": "off" // 禁止非null断言
   }
 }
